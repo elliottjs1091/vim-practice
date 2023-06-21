@@ -1,0 +1,51 @@
+SHELL
+: 	to execute commands
+i 	insert before cursor - it lets you type stuff
+<shift> + i	shift cursor to beginning of the line
+a	insert after cursor (appending)
+<shift> + a	shift to end of the line
+o	open newline below the current line, then insert
+<shift> + o	open newline above the current line, then insert
+<esc>	leave mode
+:w <filename.extension>		write insert text to file / create new file
+:q 	quit vim
+
+FILES
+:e /path
+
+EDITING
+<n> + <esc> + u 	undo
+<n> + <ctrl> + r 	redo
+dw	delete words
+v	visual mode highlight
+x 	character delete
+
+MOTION COMMAND
+h	left
+j	down
+k	up
+l	right
+gj	move cursor down (mult-line)	
+gk	move cursor up (multi-line)
+H	top screen (HIGH)
+M	middle screen (MID)
+L	bottom screen (LOW)
+w	start of next word (excluding first charactive)
+e 	end of current word (last character inclusive)
+$	end of the line (including last character)
+
+NAVIGATION
+<esc>	escape mode first before doing cursor movement
+<n> + <arrow-key>	move cursor in the arrow-direction n spaces/lines in the text area, where n is integer.
+
+SETTINGS
+vi ~/.vimrc	[IN UNIX TERMINAL] edit to create a persistent setting open up
+:set number	show line numbers
+:set relativenumber	show relative line position. useful when paired with navigation
+:set tabstop=<x>
+:set shiftwidth=<x>
+:set autoindent
+:set mouse=a
+colorscheme <theme>
+
+
